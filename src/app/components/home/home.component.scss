@@ -24,10 +24,17 @@
         font-family: "Bebas Neue", cursive;
         transition: all 0.5s;
         font-size: 20px;
+        a {
+          text-decoration: none;
+          color: #cd7f32;
+        }
       }
       button:hover {
         background: #cd7f32;
         color: white;
+        a {
+          color: white;
+        }
       }
     }
   }
@@ -67,10 +74,17 @@
       margin-top: 10px;
       font-family: "Bebas Neue", cursive;
       transition: all 0.5s;
+      a {
+        text-decoration: none;
+        color: #cd7f32;
+      }
     }
     button:hover {
       background: #cd7f32;
       color: white;
+      a {
+        color: white;
+      }
     }
   }
 

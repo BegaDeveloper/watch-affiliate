@@ -1,1 +1,62 @@
-<p>womens-watches works!</p>
+<div class="main-mens-watch">
+  <div class="container">
+    <h1>woMen's watches</h1>
+    <hr />
+    <div class="filter-div">
+      <div class="flex-select">
+        <div>
+          <mat-form-field appearance="outline">
+            <mat-label>Brand</mat-label>
+            <input
+              matInput
+              placeholder="Search brands"
+              [(ngModel)]="searchBrand"
+              autocomplete="off"
+            />
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="price-div">
+        <div><mat-label>Price</mat-label></div>
+        <mat-slider min="0" max="20000" thumbLabel>
+          <input matSliderStartThumb [(ngModel)]="minPrice" />
+          <input matSliderEndThumb [(ngModel)]="maxPrice" />
+        </mat-slider>
+        <div>
+          <p>{{ minPrice + "$" + " - " + maxPrice + "$" }}</p>
+        </div>
+      </div>
+    </div>
+    <!---Watches--->
+    <div class="watches-display mt-5">
+      <div
+        class="watch"
+        *ngFor="
+          let watch of displayWatches
+            | filtered
+              : {
+                  price: { min: minPrice, max: maxPrice },
+                  sortBy: sortBy
+                }
+            | filter : searchBrand
+        "
+        (click)="onWatchClick(watch)"
+      >
+        <div class="watch-img">
+          <img [src]="watch.image" alt="" />
+        </div>
+        <p>{{ watch.model }}</p>
+        <h3>{{ watch.name }}</h3>
+        <p>
+          <b>{{ watch.price }} EUR</b>
+        </p>
+      </div>
+    </div>
+    <div class="show-more">
+      <button (click)="loadMore()">
+        Load More&nbsp;
+        <img src="../../../assets/icons/load.svg" alt="" />
+      </button>
+    </div>
+  </div>
+</div>

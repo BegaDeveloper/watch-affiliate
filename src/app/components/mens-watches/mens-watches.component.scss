@@ -2,7 +2,23 @@
 
 .main-mens-watch {
   margin-top: 30px;
+  padding-bottom: 60px;
   .container {
+    .show-more {
+      display: flex;
+      justify-content: center;
+      button {
+        background: #e7e7e7;
+        border: 1px #cdcdcd solid;
+        border-radius: 4px;
+        padding: 5px 20px;
+        margin-top: 35px;
+        box-shadow: 0 0 3px #ccc;
+        img {
+          width: 20px;
+        }
+      }
+    }
     h1 {
       font-family: "Bebas Neue", cursive;
     }
@@ -23,6 +39,7 @@
     .watches-display {
       display: flex;
       flex-flow: wrap;
+      justify-content: center;
       .watch {
         width: 267px;
         display: flex;

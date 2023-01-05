@@ -1,0 +1,215 @@
+.watch-preview-main {
+  padding: 50px 0;
+  .container {
+    .details {
+      .flex-divs {
+        display: flex;
+        .image-div {
+          img {
+            width: 400px;
+          }
+        }
+        .about-the-watch {
+          .star-div {
+            img {
+              width: 20px;
+              height: 20px;
+            }
+          }
+
+          .watch-price {
+            font-size: 22px;
+            font-weight: 500;
+          }
+          .buy-btn {
+            button {
+              background: white;
+              padding: 5px 75px;
+              border-radius: 5px;
+              border: 1px solid #cbcbcb;
+              box-shadow: 0 0 3px #ccc;
+              text-align: left;
+              font-size: 14px;
+              font-weight: 500;
+              transition: all 0.5s;
+              img {
+                width: 100px;
+              }
+            }
+            button:hover {
+              box-shadow: 0 0 8px rgb(139, 139, 139);
+            }
+          }
+        }
+      }
+    }
+    .product-specs {
+      margin-top: 40px;
+      table {
+        max-width: 600px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media (max-width: 830px) {
+  .watch-preview-main {
+    padding: 50px 0;
+    .container {
+      .details {
+        .flex-divs {
+          display: block;
+          .image-div {
+            img {
+              width: 400px;
+            }
+          }
+          .about-the-watch {
+            .star-div {
+              img {
+                width: 20px;
+                height: 20px;
+              }
+            }
+
+            .watch-price {
+              font-size: 22px;
+              font-weight: 500;
+            }
+            .buy-btn {
+              button {
+                background: white;
+                padding: 5px 75px;
+                border-radius: 5px;
+                border: 1px solid #cbcbcb;
+                box-shadow: 0 0 3px #ccc;
+                text-align: left;
+                font-size: 14px;
+                font-weight: 500;
+                transition: all 0.5s;
+                img {
+                  width: 100px;
+                }
+              }
+              button:hover {
+                box-shadow: 0 0 8px rgb(139, 139, 139);
+              }
+            }
+          }
+        }
+      }
+      .product-specs {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .watch-preview-main {
+    padding: 50px 0;
+    .container {
+      .details {
+        .flex-divs {
+          display: block;
+          .image-div {
+            display: flex;
+            justify-content: center;
+            img {
+              width: 300px;
+            }
+          }
+          .about-the-watch {
+            .star-div {
+              img {
+                width: 20px;
+                height: 20px;
+              }
+            }
+
+            .watch-price {
+              font-size: 22px;
+              font-weight: 500;
+            }
+            .buy-btn {
+              button {
+                background: white;
+                padding: 5px 75px;
+                border-radius: 5px;
+                border: 1px solid #cbcbcb;
+                box-shadow: 0 0 3px #ccc;
+                text-align: left;
+                font-size: 14px;
+                font-weight: 500;
+                transition: all 0.5s;
+                img {
+                  width: 100px;
+                }
+              }
+              button:hover {
+                box-shadow: 0 0 8px rgb(139, 139, 139);
+              }
+            }
+          }
+        }
+      }
+      .product-specs {
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .watch-preview-main {
+    padding: 50px 0;
+    .container {
+      .details {
+        .flex-divs {
+          display: block;
+          .image-div {
+            img {
+              width: 200px;
+            }
+          }
+          .about-the-watch {
+            .star-div {
+              img {
+                width: 20px;
+                height: 20px;
+              }
+            }
+
+            .watch-price {
+              font-size: 22px;
+              font-weight: 500;
+            }
+            .buy-btn {
+              button {
+                background: white;
+                padding: 5px 75px;
+                border-radius: 5px;
+                border: 1px solid #cbcbcb;
+                box-shadow: 0 0 3px #ccc;
+                text-align: left;
+                font-size: 14px;
+                font-weight: 500;
+                transition: all 0.5s;
+                img {
+                  width: 100px;
+                }
+              }
+              button:hover {
+                box-shadow: 0 0 8px rgb(139, 139, 139);
+              }
+            }
+          }
+        }
+      }
+      .product-specs {
+        margin-top: 40px;
+      }
+    }
+  }
+}

@@ -19,6 +19,10 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSliderModule } from '@angular/material/slider';
 import { FilterPipe } from './pipe/filter.pipe';
+import { MatButtonModule } from '@angular/material/button';
+
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { WatchPreviewComponent } from './components/mens-watches/watch-preview/watch-preview.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +34,7 @@ import { FilterPipe } from './pipe/filter.pipe';
     WomensWatchesComponent,
     FilterPipe,
     LuxuryWatchesComponent,
+    WatchPreviewComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,6 +48,8 @@ import { FilterPipe } from './pipe/filter.pipe';
     MatSelectModule,
     MatSliderModule,
     MatInputModule,
+    MatButtonModule,
+    Ng2SearchPipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+.main-mens-watch {
+  margin-top: 30px;
+  padding-bottom: 60px;
+  .container {
+    .show-more {
+      display: flex;
+      justify-content: center;
+      button {
+        background: #e7e7e7;
+        border: 1px #cdcdcd solid;
+        border-radius: 4px;
+        padding: 5px 20px;
+        margin-top: 35px;
+        box-shadow: 0 0 3px #ccc;
+        img {
+          width: 20px;
+        }
+      }
+    }
+    h1 {
+      font-family: "Bebas Neue", cursive;
+    }
+    .filter-div {
+      .flex-select {
+        display: flex;
+        flex-flow: wrap;
+        div {
+          margin: 10px;
+        }
+      }
+      .price-div {
+        mat-slider {
+          width: 300px;
+        }
+      }
+    }
+    .watches-display {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: center;
+      .watch {
+        width: 267px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid #80808042;
+        box-shadow: 0 0 3px #ccc;
+        margin: 15px;
+        cursor: pointer;
+        transition: all 0.5s;
+        .watch-img {
+          img {
+            width: 230px;
+          }
+        }
+      }
+
+      .watch:hover {
+        box-shadow: 0 0 10px #9e9e9e;
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .main-mens-watch {
+    margin-top: 30px;
+    .container {
+      h1 {
+        font-family: "Bebas Neue", cursive;
+      }
+      .filter-div {
+        .flex-select {
+          display: flex;
+          flex-flow: wrap;
+          div {
+            margin: 10px;
+          }
+        }
+        .price-div {
+          mat-slider {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}

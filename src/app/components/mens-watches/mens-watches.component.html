@@ -6,32 +6,13 @@
       <div class="flex-select">
         <div>
           <mat-form-field appearance="outline">
-            <mat-label>Sort </mat-label>
-            <mat-select [(ngModel)]="sortBy">
-              <mat-option *ngFor="let y of sort" [value]="y.id">
-                {{ y.sortBy }}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-        <div>
-          <mat-form-field appearance="outline">
             <mat-label>Brand</mat-label>
-            <mat-select [(ngModel)]="selectedBrand">
-              <mat-option *ngFor="let brand of brands" [value]="brand">
-                {{ brand }}
-              </mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
-        <div>
-          <mat-form-field appearance="outline">
-            <mat-label>Size</mat-label>
-            <mat-select>
-              <mat-option *ngFor="let s of size" [value]="s.theSize">
-                {{ s.theSize }}
-              </mat-option>
-            </mat-select>
+            <input
+              matInput
+              placeholder="Search brands"
+              [(ngModel)]="searchBrand"
+              autocomplete="off"
+            />
           </mat-form-field>
         </div>
       </div>
@@ -51,14 +32,15 @@
       <div
         class="watch"
         *ngFor="
-          let watch of watches
-            | filter
+          let watch of displayWatches
+            | filtered
               : {
-                  selectedBrand: selectedBrand,
                   price: { min: minPrice, max: maxPrice },
                   sortBy: sortBy
                 }
+            | filter : searchBrand
         "
+        (click)="onWatchClick(watch)"
       >
         <div class="watch-img">
           <img [src]="watch.image" alt="" />
@@ -66,9 +48,15 @@
         <p>{{ watch.model }}</p>
         <h3>{{ watch.name }}</h3>
         <p>
-          <b>{{ watch.price | currency : "EUR" }} EUR</b>
+          <b>{{ watch.price }} EUR</b>
         </p>
       </div>
+    </div>
+    <div class="show-more">
+      <button (click)="loadMore()">
+        Load More&nbsp;
+        <img src="../../../assets/icons/load.svg" alt="" />
+      </button>
     </div>
   </div>
 </div>

@@ -1,13 +1,10 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
-  name: 'filter',
+  name: 'filtered',
 })
 export class FilterPipe implements PipeTransform {
   transform(items: any[], filter: any): any {
-    console.log(items);
-    console.log(filter);
-
     if (!items || !filter) {
       return items;
     }
@@ -27,11 +24,6 @@ export class FilterPipe implements PipeTransform {
       return true;
     });
 
-    if (filter.sortBy === 'lowest') {
-      filteredItems.sort((a, b) => a.price - b.price);
-    } else if (filter.sortBy === 'highest') {
-      filteredItems.sort((a, b) => b.price - a.price);
-    }
     return filteredItems;
   }
 }

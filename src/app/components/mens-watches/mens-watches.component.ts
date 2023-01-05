@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { CurrencyPipe } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mens-watches',
@@ -14,38 +14,29 @@ export class MensWatchesComponent implements OnInit {
   watches: any;
   selectedBrand: any;
   currentPage: number = 1;
-  watchesPerPage: number = 20;
-
-  constructor(private http: HttpClient, private currencyPipe: CurrencyPipe) {
+  watchesPerPage: number = 30;
+  displayWatches: any[];
+  searchBrand: string = '';
+  constructor(private http: HttpClient, private router: Router) {
     this.http.get('../../../assets/watches.json').subscribe((data) => {
       this.watches = data;
-      console.log(this.watches);
+      this.displayWatches = this.watches.slice(0, 30);
     });
   }
   ngOnInit(): void {}
 
-  brands: Array<string> = [
-    'Rolex',
-    'Patek Philipe',
-    'Casio',
-    'Richard Mille',
-    'Seiko',
-    'Quantum',
-  ];
-
-  price: Array<number> = [50, 100, 200, 500, 1000, 2000, 5000, 10000, 20000];
-
-  sort: Array<{ id: string; sortBy: string }> = [
-    { id: 'lowest', sortBy: 'Price: Low to High' },
-    { id: 'highest', sortBy: 'Price: High to Low' },
-  ];
   sortBy: string;
 
-  size: Array<any> = [
-    { theSize: 'XS 20 - 28' },
-    { theSize: 'S 29 - 36' },
-    { theSize: 'M 37 - 42' },
-    { theSize: 'L 42 - 46' },
-    { theSize: 'Other' },
-  ];
+  loadMore() {
+    this.displayWatches = this.displayWatches.concat(
+      this.watches.slice(
+        this.displayWatches.length,
+        this.displayWatches.length + 30
+      )
+    );
+  }
+
+  onWatchClick(watch: any) {
+    this.router.navigate(['/watch', watch.id]);
+  }
 }

@@ -15,18 +15,20 @@
     display: flex;
     justify-content: space-evenly;
     .article-div {
+      text-align: center;
       h4 {
         color: white;
         font-family: "Bebas Neue", cursive;
       }
-      ul {
-        li {
-          color: white;
-          cursor: pointer;
-          font-size: 14px;
-          opacity: 0.9;
-        }
+
+      li {
+        list-style: none;
+        color: white;
+        cursor: pointer;
+        font-size: 14px;
+        opacity: 0.9;
       }
+
       p {
         color: white;
         font-size: 14px;
