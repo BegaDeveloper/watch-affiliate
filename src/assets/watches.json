@@ -1,0 +1,215 @@
+[
+  {
+    "id": 1,
+    "image": "../assets/images/wt.jpg",
+    "model": "24G-131",
+    "name": "Seiko SekTime",
+    "price": 3000
+  },
+  {
+    "id": 2,
+    "image": "../assets/images/wt.jpg",
+    "model": "L-111",
+    "name": "Quantum Big Time",
+    "price": 400
+  },
+  {
+    "id": 3,
+    "image": "../assets/images/wt.jpg",
+    "model": "GBA-900",
+    "name": "Casio GShock",
+    "price": 100
+  },
+  {
+    "id": 4,
+    "image": "../assets/images/wt.jpg",
+    "model": "RRG-144",
+    "name": "Seiko",
+    "price": 10000
+  },
+
+  {
+    "id": 5,
+    "image": "../assets/images/wt.jpg",
+    "model": "AA-111",
+    "name": "Rolex Daytime",
+    "price": 550
+  },
+  {
+    "id": 6,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  },
+  {
+    "id": 7,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  },
+  {
+    "id": 8,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  },
+  {
+    "id": 9,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  },
+  {
+    "id": 10,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  },
+  {
+    "id": 11,
+    "image": "../assets/images/wt.jpg",
+    "model": "24G-131",
+    "name": "Seiko SekTime",
+    "price": 3000
+  },
+  {
+    "id": 12,
+    "image": "../assets/images/wt.jpg",
+    "model": "L-111",
+    "name": "Quantum Big Time",
+    "price": 400
+  },
+  {
+    "id": 13,
+    "image": "../assets/images/wt.jpg",
+    "model": "GBA-900",
+    "name": "Casio GShock",
+    "price": 100
+  },
+  {
+    "id": 14,
+    "image": "../assets/images/wt.jpg",
+    "model": "RRG-144",
+    "name": "Seiko",
+    "price": 10000
+  },
+
+  {
+    "id": 15,
+    "image": "../assets/images/wt.jpg",
+    "model": "AA-111",
+    "name": "Rolex Daytime",
+    "price": 550
+  },
+  {
+    "id": 16,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  },
+  {
+    "id": 17,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  },
+  {
+    "id": 18,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  },
+  {
+    "id": 19,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  },
+  {
+    "id": 20,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  },
+  {
+    "id": 21,
+    "image": "../assets/images/wt.jpg",
+    "model": "24G-131",
+    "name": "Seiko SekTime",
+    "price": 3000
+  },
+  {
+    "id": 22,
+    "image": "../assets/images/wt.jpg",
+    "model": "L-111",
+    "name": "Quantum Big Time",
+    "price": 400
+  },
+  {
+    "id": 23,
+    "image": "../assets/images/wt.jpg",
+    "model": "GBA-900",
+    "name": "Casio GShock",
+    "price": 100
+  },
+  {
+    "id": 24,
+    "image": "../assets/images/wt.jpg",
+    "model": "RRG-144",
+    "name": "Seiko",
+    "price": 10000
+  },
+
+  {
+    "id": 25,
+    "image": "../assets/images/wt.jpg",
+    "model": "AA-111",
+    "name": "Rolex Daytime",
+    "price": 550
+  },
+  {
+    "id": 26,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  },
+  {
+    "id": 27,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  },
+  {
+    "id": 28,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  },
+  {
+    "id": 29,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  },
+  {
+    "id": 30,
+    "image": "../assets/images/wt.jpg",
+    "model": "AAA-121",
+    "name": "Casio ",
+    "price": 1200
+  }
+]

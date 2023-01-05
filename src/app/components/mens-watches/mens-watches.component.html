@@ -1,0 +1,74 @@
+<div class="main-mens-watch">
+  <div class="container">
+    <h1>Men's watches</h1>
+    <hr />
+    <div class="filter-div">
+      <div class="flex-select">
+        <div>
+          <mat-form-field appearance="outline">
+            <mat-label>Sort </mat-label>
+            <mat-select [(ngModel)]="sortBy">
+              <mat-option *ngFor="let y of sort" [value]="y.id">
+                {{ y.sortBy }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline">
+            <mat-label>Brand</mat-label>
+            <mat-select [(ngModel)]="selectedBrand">
+              <mat-option *ngFor="let brand of brands" [value]="brand">
+                {{ brand }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div>
+          <mat-form-field appearance="outline">
+            <mat-label>Size</mat-label>
+            <mat-select>
+              <mat-option *ngFor="let s of size" [value]="s.theSize">
+                {{ s.theSize }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="price-div">
+        <div><mat-label>Price</mat-label></div>
+        <mat-slider min="0" max="20000" thumbLabel>
+          <input matSliderStartThumb [(ngModel)]="minPrice" />
+          <input matSliderEndThumb [(ngModel)]="maxPrice" />
+        </mat-slider>
+        <div>
+          <p>{{ minPrice + "$" + " - " + maxPrice + "$" }}</p>
+        </div>
+      </div>
+    </div>
+    <!---Watches--->
+    <div class="watches-display mt-5">
+      <div
+        class="watch"
+        *ngFor="
+          let watch of watches
+            | filter
+              : {
+                  selectedBrand: selectedBrand,
+                  price: { min: minPrice, max: maxPrice },
+                  sortBy: sortBy
+                }
+        "
+      >
+        <div class="watch-img">
+          <img [src]="watch.image" alt="" />
+        </div>
+        <p>{{ watch.model }}</p>
+        <h3>{{ watch.name }}</h3>
+        <p>
+          <b>{{ watch.price | currency : "EUR" }} EUR</b>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

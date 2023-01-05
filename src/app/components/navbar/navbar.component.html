@@ -1,1 +1,70 @@
-<p>navbar works!</p>
+<div class="first-nav">
+  <div class="flex">
+    <div class="display-n">
+      <p>watchesgrex@gmail.com for promotions</p>
+    </div>
+    <div class="shop">
+      <p>
+        Shop now&nbsp;&nbsp;
+        <img src="../../../assets/icons/cart.svg" width="16px" alt="" />
+      </p>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg" #navbar>
+  <div class="logo-div">
+    <img src="../../../assets/images/final white.jpg" class="logo" alt="" />
+  </div>
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <img src="../../../assets/icons/menu.svg" alt="" />
+  </button>
+  <div class="collapse navbar-collapse navlist" id="navbarNav">
+    <ul class="navbar-nav">
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+      >
+        <a class="nav-link" routerLink="home" routerLinkActive="active_route"
+          >Home</a
+        >
+      </li>
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+      >
+        <a class="nav-link" routerLink="mens-watches">Men's watches</a>
+      </li>
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+      >
+        <a class="nav-link" routerLink="womens-watches">Women's watches</a>
+      </li>
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+      >
+        <a class="nav-link" routerLink="luxury-watches">Luxury watches</a>
+      </li>
+      <li
+        class="nav-item"
+        data-toggle="collapse"
+        data-target=".navbar-collapse.show"
+      >
+        <a class="nav-link" routerLink="about">About us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
