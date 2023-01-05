@@ -45,11 +45,14 @@
         <div class="watch-img">
           <img [src]="watch.image" alt="" />
         </div>
-        <p>{{ watch.model }}</p>
-        <h3>{{ watch.name }}</h3>
-        <p>
-          <b>{{ watch.price }} EUR</b>
-        </p>
+        <div class="txt">
+          <hr />
+          <p>{{ watch.model }}</p>
+          <h3>{{ watch.name }}</h3>
+          <p>
+            <b>${{ watch.price }}</b>
+          </p>
+        </div>
       </div>
     </div>
     <div class="show-more">

@@ -41,6 +41,7 @@
       flex-flow: wrap;
       justify-content: center;
       .watch {
+        padding: 10px 15px;
         width: 267px;
         display: flex;
         flex-direction: column;
@@ -48,8 +49,12 @@
         border: 1px solid #80808042;
         box-shadow: 0 0 3px #ccc;
         margin: 15px;
+        justify-content: space-evenly;
         cursor: pointer;
         transition: all 0.5s;
+        .txt {
+          text-align: center;
+        }
         .watch-img {
           img {
             width: 230px;

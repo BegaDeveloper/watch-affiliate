@@ -5,11 +5,19 @@
       .flex-divs {
         display: flex;
         .image-div {
+          margin-right: 30px;
           img {
             width: 400px;
           }
         }
         .about-the-watch {
+          .description {
+            ul {
+              li {
+                font-size: 14px;
+              }
+            }
+          }
           .star-div {
             img {
               width: 20px;
@@ -18,8 +26,8 @@
           }
 
           .watch-price {
-            font-size: 22px;
-            font-weight: 500;
+            font-size: 30px;
+            font-weight: 600;
           }
           .buy-btn {
             button {
@@ -32,6 +40,10 @@
               font-size: 14px;
               font-weight: 500;
               transition: all 0.5s;
+              a {
+                text-decoration: none;
+                color: black;
+              }
               img {
                 width: 100px;
               }

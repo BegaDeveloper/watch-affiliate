@@ -7,8 +7,7 @@
         </div>
         <div class="about-the-watch">
           <h3>
-            Watches for Men Luxury Skeleton Tonneau Watch for Men Waterproof
-            Adjustable Silicone Strap Steampunk Style Chronograph Calendar
+            {{ watch.name2 }}
           </h3>
           <div class="star-div">
             <div class="flex">
@@ -26,38 +25,29 @@
           <div class="description">
             <ul>
               <li>
-                Mens Watches:Elegant fashion style,fashion bling design and
-                chronograph sport style,exactly for a men's watch.This iced out
-                diamond classic business and sport style watch will be greatly
-                suitable for almost any occasion,outdoor,party and business
-                meeting.
+                {{ watch.description1 }}
               </li>
               <li>
-                Fashion Chronograph Watch: Functional chronograph, Stars decored
-                bezel, sporty silicone strap watch, the watch is comfortable to
-                wear and unique in shape, which can attract everyone's
-                attention. This is definitely a watch worth collecting.
+                {{ watch.description2 }}
               </li>
               <li>
-                Details of The MENS Watch: Fashion Men's Quartz analog watch.
-                Sword luminous pointers. Functional subdials display second and
-                chronograph minutes. Small triangle decorative sub-dial. Hollow
-                skeleton puck case. Men's screw design. Crown protective ear.
-                Fixed bezel and back cover. Men's standard nylon band.
+                {{ watch.description3 }}
               </li>
               <li>
-                Necessary for a gentleman:Cool mens watch skeleton luminous with
-                delicate appearance goes with every occasion be it formal or
-                casual. Wear this watch on the go, from business, leisure to
-                indoor and outdoor activities or for daily use
+                {{ watch.description4 }}
+              </li>
+              <li>
+                {{ watch.description5 }}
               </li>
             </ul>
           </div>
           <hr />
           <div class="buy-btn">
             <button>
-              Buy Now&nbsp;&nbsp;<br />
-              <img src="../../../../assets/images/amazon.jpg" alt="" />
+              <a [href]="watch.link">
+                Buy Now&nbsp;&nbsp;<br />
+                <img src="../../../../assets/images/amazon.jpg" alt=""
+              /></a>
             </button>
           </div>
         </div>
@@ -71,43 +61,47 @@
         <tbody>
           <tr>
             <th scope="row">Brand, Seller, or Collection Name</th>
-            <td>AIMES</td>
+            <td>{{ watch.brand }}</td>
           </tr>
           <tr>
             <th scope="row">Model number</th>
-            <td>AMS0420</td>
+            <td>{{ watch.model }}</td>
           </tr>
           <tr>
-            <th scope="row">Part number</th>
-            <td>AMS0420</td>
+            <th scope="row">Movement</th>
+            <td>{{ watch.movement }}</td>
           </tr>
           <tr>
             <th scope="row">Item Shape</th>
-            <td>Square</td>
+            <td>{{ watch.shape }}</td>
           </tr>
           <tr>
             <th scope="row">Display Type</th>
-            <td>Analog</td>
+            <td>{{ watch.display }}</td>
           </tr>
           <tr>
-            <th scope="row">Clasp</th>
-            <td>Tang Buckle</td>
+            <th scope="row">Band color</th>
+            <td>{{ watch.color }}</td>
           </tr>
           <tr>
             <th scope="row">Band Material</th>
-            <td>Rubber</td>
+            <td>{{ watch.material }}</td>
           </tr>
           <tr>
             <th scope="row">Band width</th>
-            <td>26 millimeters</td>
+            <td>{{ watch.width }}</td>
           </tr>
           <tr>
             <th scope="row">Water resistant depth</th>
-            <td>30 Meters</td>
+            <td>{{ watch.water }}</td>
           </tr>
           <tr>
-            <th scope="row">Band Material</th>
-            <td>Rubber</td>
+            <th scope="row">Year</th>
+            <td>{{ watch.year }}</td>
+          </tr>
+          <tr>
+            <th scope="row">Size</th>
+            <td>{{ watch.size }}</td>
           </tr>
         </tbody>
       </table>
